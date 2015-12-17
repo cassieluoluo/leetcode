@@ -1,5 +1,5 @@
 # Leetcode
-This repository contains all my submissions on leetcode.com.
+Hello, this repository contains all my submissions on leetcode.com.
 They are all accepted (i.e. passed all the test cases) at the time of my subimssion.
 
 I try to use as many programming languages as I can.
