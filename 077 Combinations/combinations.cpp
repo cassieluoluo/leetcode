@@ -1,4 +1,4 @@
-class Solution {
+class Solution {	// Author: Xinyu Chen
 public:
     vector<vector<int>> combine(int n, int k) {
         vector<int> row;
