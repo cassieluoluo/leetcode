@@ -1,4 +1,3 @@
-// Author: Xinyu Chen
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -8,13 +7,11 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution {	// Author: Xinyu Chen
 public:
     bool hasPathSum(TreeNode* root, int sum) {
         if (root == nullptr) return false;
-        if (root->left == nullptr && root->right == nullptr && root->val == sum) return true;
-        else
-            return hasPathSum(root->left, sum - root->val)
-                || hasPathSum(root->right, sum - root->val);
+        if (root->left == nullptr && root->right == nullptr && sum - root->val == 0) return true;
+        return hasPathSum(root->left, sum - root->val) || hasPathSum(root->right, sum - root->val);
     }
 };

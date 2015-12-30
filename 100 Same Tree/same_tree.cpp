@@ -13,7 +13,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution {	// Author: Xinyu Chen
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
         if (p == nullptr && q == nullptr) return true;
