@@ -41,7 +41,7 @@ In the main function, we loop through each land location, once the DFS function 
 
 **Breadth-first Search**
 
-[//] # (To be done.)
+[//]: # (To be done.)
 
 LeetCode Link: [https://leetcode.com/problems/number-of-islands/](https://leetcode.com/problems/number-of-islands/)
 
