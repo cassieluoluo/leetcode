@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Two Sum
- *	https://leetcode.com/problems/two-sum/
- *	Runtime: 480 ms
- */
-
 public int[] TwoSum(int[] nums, int target)
 {
     var map = new Dictionary<int, int>();
@@ -26,4 +19,4 @@ public int[] TwoSum(int[] nums, int target)
 		}
     }
     return null;
-}
+}	// Author: Xinyu Chen

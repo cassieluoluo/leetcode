@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Add Two Numbers
- *	https://leetcode.com/problems/add-two-numbers/
- *	Runtime: 36 ms
- */
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -13,7 +6,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
+class Solution {	// Author: Xinyu Chen
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* prehead = new ListNode(0);

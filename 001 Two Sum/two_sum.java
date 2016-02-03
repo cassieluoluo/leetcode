@@ -1,4 +1,4 @@
-// author: Bonnie
+// Author: Bonnie
 
 import java.util.HashMap;
 
