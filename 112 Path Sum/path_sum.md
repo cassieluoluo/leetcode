@@ -19,7 +19,7 @@ return true, as there exist a root-to-leaf path `5->4->11->2` which sum is 22.
 **Tags:** Tree, Depth-first Search
 
 ## Explanation
-The idea is straight forward. We simply traverse the tree to find the sum of each path, and check to see if there is a match. A good practice to avoid creating helper functions is to subtract the node values from the sum and compare the final sum with zero. This is equivalent to keeping a separate variable that records the accumulated values.
+The idea is straight forward. We simply traverse the tree to find the sum of each path, and check to see if there is a match. Note that the termination of a path is when the node has no left nor right child but the node itself is not `null`. A good practice to avoid creating helper functions is to subtract the node values from the sum and compare the final sum with zero. This is equivalent to keeping a separate variable that records the accumulated values.
 
 LeetCode Link: [https://leetcode.com/problems/path-sum/](https://leetcode.com/problems/path-sum/)
 
