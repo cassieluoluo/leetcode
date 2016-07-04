@@ -10,4 +10,4 @@ public:
         }
         return nums[lo] < nums[hi] ? hi : lo;
     }
-};
+};  // Author: XC
