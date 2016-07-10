@@ -1,16 +1,11 @@
-// Author: Bonnie
-
-import java.util.HashMap;
-
 public class TwoSum{
-
     public int[] twoSum(int[] nums, int target){
         int rtn[] = new int[2];
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for(int i=0; i<nums.length; i++){
-            if(map.get(target-nums[i])!=null){
-                rtn[0] = map.get(target-nums[i]) + 1;
-                rtn[1] = i + 1;
+        for (int i = 0; i < nums.length; i++){
+            if (map.get(target - nums[i]) != null){
+                rtn[0] = map.get(target-nums[i]);
+                rtn[1] = i;
                 return rtn;
             }
             map.put(nums[i], i);
@@ -35,4 +30,4 @@ public class TwoSum{
         }
         return rtn;
     }*/
-}
+} // Author: Bonnie
