@@ -12,8 +12,7 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
         if (l1->val < l2->val) {
             cur->next = l1;
             l1 = l1->next;
-        }
-        else {
+        } else {
             cur->next = l2;
             l2 = l2->next;
         }
