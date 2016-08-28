@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Longest Substring Without Repeating Characters
- *	https://leetcode.com/problems/longest-substring-without-repeating-characters/
- *	Runtime: 76 ms
- */
-
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -23,4 +16,4 @@ public:
         }
         return maxlen;
     }
-};
+}; // Author: XC
