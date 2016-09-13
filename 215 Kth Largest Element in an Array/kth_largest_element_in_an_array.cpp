@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Kth Largest Element in an Array
- *	https://leetcode.com/problems/kth-largest-element-in-an-array/
- *	Runtime: 4 ms
- */
-
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
@@ -27,4 +20,4 @@ public:
         else if (left > k) return dac(nums, lo, left - 1, k);
         else return dac(nums, left + 1, hi, k);
     }
-};
+}; // Auhtor: XC
