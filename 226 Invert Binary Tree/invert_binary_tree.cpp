@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
         if (root == nullptr) return nullptr;
@@ -16,4 +16,4 @@ public:
         invertTree(root->right);
         return root;
     }
-};
+}; // Author: XC

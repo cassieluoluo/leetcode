@@ -1,4 +1,4 @@
-# Title of the Problem
+# Decode Ways
 ### Difficulty: Medium
 
 Problem Description

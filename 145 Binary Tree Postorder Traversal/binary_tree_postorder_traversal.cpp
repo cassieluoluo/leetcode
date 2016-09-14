@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Binary Tree Postorder Traversal
- *	https://leetcode.com/problems/binary-tree-postorder-traversal/
- *	Runtime: 0 ms
- */
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -50,4 +43,4 @@ public:
         reverse(result.begin(), result.end());
         return result;
     }
-};
+}; // Author: XC

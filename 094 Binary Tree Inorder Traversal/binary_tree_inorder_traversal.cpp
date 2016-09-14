@@ -30,24 +30,22 @@ public:
     }
 };
 
-class SolutionIterative {
+class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> result;
-        if (root == nullptr) return result;
-        stack<TreeNode*> st;
-        while (!st.empty() || root != nullptr) {
+        stack<TreeNode *> st;
+        vector<int> res;
+        while (root != nullptr || !st.empty()) {
             if (root != nullptr) {
                 st.push(root);
                 root = root->left;
-            }
-            else {
-                root = st.top();
+            } else {
+                TreeNode *node = st.top();
                 st.pop();
-                result.push_back(root->val);
-                root = root->right;
+                res.push_back(node->val);
+                root = node->right;
             }
         }
-        return result;
+        return res;
     }
-};
+};  // Author: XC
