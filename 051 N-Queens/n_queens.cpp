@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     vector<vector<string>> solveNQueens(int n) {
 		rows = cols = n;
@@ -43,4 +43,4 @@ public:
 private:
 	vector<vector<string>> result;
 	int rows, cols;
-};
+}; // Author: XC

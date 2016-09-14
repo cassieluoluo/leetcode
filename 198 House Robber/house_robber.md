@@ -15,6 +15,6 @@ The most important step to solve a dynamic programming problem is to find the tr
 
 Note that `a(n)` here is the amount of money stashed in the *n*th house where `n` starts from 1. However, the index of array `nums` starts from 0. 
 
-LeetCode Link: [https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/)
+LeetCode Link: [House Robber ](https://leetcode.com/problems/house-robber/)
 
 *Author: Xinyu Chen*
