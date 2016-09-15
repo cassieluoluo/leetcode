@@ -7,35 +7,21 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     vector<string> binaryTreePaths(TreeNode* root) {
-        vector<int> path;
-        bfs(root, path);
-        return result;
+        vector<string> res;
+        string path;
+        dfs(root, path, res);
+        return res;
     }
-private:    
-    void bfs(TreeNode* node, vector<int>& path) {
+    
+    void dfs(TreeNode *node, string path, vector<string>& res) {
         if (node == nullptr) return;
-        path.push_back(node->val);
-        if (node->left == nullptr && node->right == nullptr) {
-            result.push_back(generatePath(path));
-            return;
-        }
-        if (node->left != nullptr) {
-            bfs(node->left, path);
-            path.pop_back();
-        }
-        if (node->right != nullptr) {
-            bfs(node->right, path);
-            path.pop_back();
-        }
+        path += to_string(node->val) + "->";
+        if (node->left != nullptr) dfs(node->left, path, res);
+        if (node->right != nullptr) dfs(node->right, path, res);
+        if (node->left == nullptr && node->right == nullptr)
+            res.push_back(path.substr(0, path.size() - 2));
     }
-    string generatePath(vector<int> path) {
-        stringstream ss;
-        for (int i = 0; i < path.size() - 1; i++) ss << path[i] << "->";
-        ss << path.back();
-        return ss.str();
-    }
-    vector<string> result;
-};
+}; // Author: XC
