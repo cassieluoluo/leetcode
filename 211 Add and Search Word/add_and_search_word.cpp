@@ -53,3 +53,41 @@ private:
 // WordDictionary wordDictionary;
 // wordDictionary.addWord("word");
 // wordDictionary.search("pattern");
+
+// Another method
+
+class WordDictionary {
+public:
+
+    // Adds a word into the data structure.
+    void addWord(string word) {
+        hash[word.size()].insert(word);
+    }
+
+    // Returns if the word is in the data structure. A word could
+    // contain the dot character '.' to represent any one letter.
+    bool search(string word) {
+        int len = word.size();
+        if (hash.find(len) == hash.end()) return false;
+        auto words = hash[word.size()];
+        for (auto w : words) {
+            bool flag = true;
+            for (int i = 0; i < word.size(); i++) {
+                if (word[i] != '.' && word[i] != w[i]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) return true;
+        }
+        return false;
+    }
+
+private:
+    unordered_map<int, set<string>> hash;
+}; // Author: XC
+
+// Your WordDictionary object will be instantiated and called as such:
+// WordDictionary wordDictionary;
+// wordDictionary.addWord("word");
+// wordDictionary.search("pattern");
