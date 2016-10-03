@@ -1,4 +1,3 @@
-// Author: Xinyu Chen
 bool isPowerOfTwo(int n) {
     if (n <= 0) return false;
     bool flag = false;
@@ -10,4 +9,4 @@ bool isPowerOfTwo(int n) {
         n >>= 1;
     }
 	return flag;
-}
+} /* Author: XC */

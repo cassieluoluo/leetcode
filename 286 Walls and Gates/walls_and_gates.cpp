@@ -1,3 +1,4 @@
+// DFS Solution
 class Solution {
 public:
 	void wallsAndGates(vector<vector<int>>& rooms) {
@@ -26,4 +27,38 @@ private:
 	int rows, cols;
 	const int dx[4] = { -1, 1, 0, 0 };
 	const int dy[4] = { 0, 0, -1, 1 };
-};  // Author: XC
+}; // Author: XC
+
+// BFS Solution
+class Solution {
+public:
+	void wallsAndGates(vector<vector<int>>& rooms) {
+		rows = rooms.size();
+		if (rows == 0) return;
+		cols = rooms[0].size();
+		queue<pair<int, int>> q;
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
+				if (rooms[i][j] == 0)
+					q.push(make_pair(i, j));
+			}
+		}
+		while (!q.empty()) {
+			auto p = q.front();
+			q.pop();
+			int x = p.first;
+			int y = p.second;
+			for (int k = 0; k < 4; k++) {
+				int nx = x + dx[k];
+				int ny = y + dy[k];
+				if (nx < 0 || nx >= rows || ny < 0 || ny >= cols) continue;
+				if (rooms[nx][ny] < rooms[x][y] + 1) continue;
+				rooms[x + dx[k]][y + dy[k]] = rooms[x][y] + 1;
+				q.push(make_pair(x + dx[k], y + dy[k]));
+			}
+		}
+	}
+	int rows, cols;
+	const int dx[4] = { -1, 1, 0, 0 };
+	const int dy[4] = { 0, 0, -1, 1 };
+}; // Author: XC
