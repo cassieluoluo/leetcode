@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Contains Duplicate
- *	https://leetcode.com/problems/contains-duplicate/
- *	Runtime: 12 ms
- */
- 
 int cmp(const void* a, const void* b) {
 	int x = *(int*)a;
 	int y = *(int*)b;
@@ -17,5 +10,4 @@ bool containsDuplicate(int* nums, int numsSize) {
 		if (nums[i - 1] == nums[i]) return true;
 	}
 	return false;
-}
-};
+} /* Author: XC */

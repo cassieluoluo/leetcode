@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Count Primes
- *	https://leetcode.com/problems/count-primes/
- *	Runtime: 116 ms
- */
-
 class Solution {
 public:
     int countPrimes(int n) {
@@ -23,4 +16,4 @@ public:
 			if (numbers[i] == 1) counter++;
 		return counter;
     }
-};
+}; // Author: XC
