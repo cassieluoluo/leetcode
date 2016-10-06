@@ -1,4 +1,4 @@
-class Solution {  // Author: Xinyu Chen
+class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
         vector<vector<int>> result;
@@ -20,4 +20,4 @@ public:
             }
         }
     }
-};
+}; // Author: XC

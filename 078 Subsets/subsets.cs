@@ -1,4 +1,4 @@
-public class Solution {	// Author: Xinyu Chen
+public class Solution {
     public IList<IList<int>> Subsets(int[] nums) {
         Array.Sort(nums);
         int numElements = nums.Length;
@@ -18,4 +18,4 @@ public class Solution {	// Author: Xinyu Chen
         }
         return result;
     }
-}
+} // Author: XC

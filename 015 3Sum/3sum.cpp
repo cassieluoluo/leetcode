@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	3Sum
- *	https://leetcode.com/problems/3sum/
- *	Runtime: 60 ms
- */
-
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -39,4 +32,35 @@ public:
         }
         return result;
     }
-};
+}; // Author: XC
+
+// Another solution
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        vector<vector<int>> res;
+		int len = nums.size();
+        if (len < 3) return res;
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < len - 2; i++) {
+            if (i > 0 && nums[i - 1] == nums[i]) continue;
+			int j = i + 1, k = len - 1;
+            while (j < k) {
+                int sum = nums[i] + nums[j] + nums[k];
+                if (sum == 0) {
+                    vector<int> r{ nums[i], nums[j], nums[k] };
+                    res.push_back(r);
+					j++;
+					k--;
+                    while (j < k && nums[j - 1] == nums[j]) j++;
+                    while (j < k && nums[k] == nums[k + 1]) k--;
+                } else if (sum < 0) {
+                    j++;
+                } else {
+                    k--;
+                }
+            }
+        }
+        return res;
+    }
+}; // Author: XC

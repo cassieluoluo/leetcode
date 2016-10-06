@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
         if (nums.size() < 2) return;
@@ -16,4 +16,4 @@ public:
             fast = slow + 1;
         }
     }
-};
+}; // Author: XC
