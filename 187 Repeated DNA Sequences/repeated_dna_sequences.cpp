@@ -1,4 +1,3 @@
-// Author: Xinyu Chen
 class Solution {
 public:
     vector<string> findRepeatedDnaSequences(string s) {
@@ -18,4 +17,4 @@ public:
     	}
     	return result;
     }
-};
+}; // Author: XC

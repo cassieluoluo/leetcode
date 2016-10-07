@@ -6,7 +6,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
         ListNode *fast, *slow;
@@ -26,4 +26,4 @@ public:
         }
         return slow;
     }
-};
+}; // Author: XC
