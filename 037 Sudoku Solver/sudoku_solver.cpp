@@ -32,4 +32,4 @@ public:
 				if (board[row][col] == c) return false;
 		return true;
 	}
-};
+}; // Author: XC

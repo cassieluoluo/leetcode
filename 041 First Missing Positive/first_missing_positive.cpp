@@ -12,4 +12,4 @@ public:
         }
         return len + 1;
     }
-};
+}; // Author: XC

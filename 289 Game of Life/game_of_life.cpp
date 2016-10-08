@@ -38,4 +38,4 @@ public:
             }
         }
     }
-};
+}; // Author: XC
