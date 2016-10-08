@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) {
 		vector<unordered_set<int>> edges(numCourses);
@@ -25,4 +25,4 @@ public:
 		if (result.size() != numCourses) return vector<int>();
 		return result;
 	}
-};
+}; // Author: XC

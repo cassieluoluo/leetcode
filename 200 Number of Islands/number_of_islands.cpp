@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
 		rows = grid.size();
@@ -27,4 +27,4 @@ private:
 		dfs(grid, x, y + 1);
 	}
 	int rows, cols;
-};
+}; // Author: XC
