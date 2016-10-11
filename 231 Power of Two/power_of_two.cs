@@ -1,4 +1,3 @@
-// Author: Xinyu Chen
 public class Solution {
     public bool IsPowerOfTwo(int n) {
         if (n <= 0) return false;
@@ -14,4 +13,4 @@ public class Solution {
         }
         return flag;
     }
-}
+} // Author: XC

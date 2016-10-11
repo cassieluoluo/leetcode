@@ -1,4 +1,3 @@
-/* Factorial Trailing Zeroes */
 class Solution {
 public:
     int trailingZeroes(int n) {
@@ -9,4 +8,4 @@ public:
         }
         return total;
     }
-};
+}; // Author: XC

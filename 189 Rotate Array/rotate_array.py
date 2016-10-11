@@ -1,8 +1,4 @@
-# LeetCode Submissions by Xinyu Chen
-# Rotate Array
-# https://leetcode.com/problems/rotate-array/
-# Runtime: 108 ms
-
+# Author: XC
 class Solution:
     # @param {integer[]} nums
     # @param {integer} k

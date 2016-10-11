@@ -40,4 +40,4 @@ private:
 	int cap, count;
 	list<CacheNode> q;
 	unordered_map<int, list<CacheNode>::iterator> m;
-};
+}; // Author: XC

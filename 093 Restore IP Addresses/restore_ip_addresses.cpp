@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
 	vector<string> restoreIpAddresses(string s) {
 		vector<string> result;
@@ -28,4 +28,4 @@ public:
 		if (stoi(curr) > 255) return;	// After adding the third digit, if it is larger than 255, we do not proceed
 		dfs(s, pos, index, ip + curr, result);
 	}
-};
+}; // Author: XC
