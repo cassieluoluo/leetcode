@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     int largestRectangleArea(vector<int>& height) {
     	stack<int> st;
@@ -18,4 +18,4 @@ public:
     	}
     	return result;
     }
-};
+}; // Author: XC

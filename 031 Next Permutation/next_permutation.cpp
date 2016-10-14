@@ -20,4 +20,4 @@ public:
     	auto it = nums.begin() + p + 1;
     	reverse(it, nums.end());
     }
-};
+}; // Author: XC

@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Binary Tree Level Order Traversal
- *	https://leetcode.com/problems/binary-tree-level-order-traversal/
- *	Runtime: 4 ms
- */
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -36,4 +29,4 @@ public:
         }
         return result;
     }
-};
+}; // Author: XC
