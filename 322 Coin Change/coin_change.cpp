@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
         if (amount < 1) return 0;
@@ -14,4 +14,4 @@ public:
 		if (dp[amount] > amount) return -1;
 		return dp[amount];
     }
-};
+}; // Author: XC

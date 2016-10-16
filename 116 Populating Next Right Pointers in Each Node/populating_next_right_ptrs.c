@@ -4,7 +4,6 @@
  *  int val;
  *  struct TreeLinkNode *left, *right, *next;
  * };
- *
  */
 void connect(struct TreeLinkNode *root) {
     if (!root) return;
