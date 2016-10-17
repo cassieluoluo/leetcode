@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Single Number II
- *	https://leetcode.com/problems/single-number-ii/
- *	Runtime: 12 ms
- */
-
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
@@ -18,4 +11,4 @@ public:
         }
         return ones;
     }
-};
+}; // Author: XC

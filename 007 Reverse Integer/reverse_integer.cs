@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Reverse Integer
- *	https://leetcode.com/problems/reverse-integer/
- *	Runtime: 56 ms
- */
-
 public class Solution {
     public int Reverse(int x) {
         long res = 0;
@@ -18,4 +11,4 @@ public class Solution {
         if (res > Int32.MaxValue) return 0;
         return x >= 0 ? (int)res : (int)-res;
     }
-}
+} // Author: XC

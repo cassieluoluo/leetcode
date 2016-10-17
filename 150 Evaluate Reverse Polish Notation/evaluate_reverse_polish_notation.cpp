@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Evaluate Reverse Polish Notation
- *	https://leetcode.com/problems/evaluate-reverse-polish-notation/
- *	Runtime: 16 ms
- */
-
 class Solution {
 public:
     int evalRPN(vector<string>& tokens) {
@@ -37,4 +30,4 @@ public:
         }
         return st.top();
     }
-};
+}; // Author: XC

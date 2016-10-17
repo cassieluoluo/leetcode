@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Summary Ranges
- *	https://leetcode.com/problems/summary-ranges/
- *	Runtime: 0 ms
- */
-
 class Solution {
 public:
     vector<string> summaryRanges(vector<int>& nums) {
@@ -33,4 +26,4 @@ public:
     	result.push_back(buffer);
     	return result;
     }
-};
+}; // Author: XC
