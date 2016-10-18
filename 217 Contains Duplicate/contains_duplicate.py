@@ -1,9 +1,4 @@
-# LeetCode Submissions by Xinyu Chen
-# Contains Duplicate
-# https://leetcode.com/problems/contains-duplicate/
-# Runtime: 56 ms
-
-class Solution:
+class Solution: # Author: XC
     # @param {integer[]} nums
     # @return {boolean}
     def containsDuplicate(self, nums):

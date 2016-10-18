@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Contains Duplicate
- *	https://leetcode.com/problems/contains-duplicate/
- *	Runtime: 196 ms
- */
- 
 public class Solution {
     public bool ContainsDuplicate(int[] nums) {
         if (nums.Length < 2) return false;
@@ -16,4 +9,4 @@ public class Solution {
         }
         return false;
     }
-}
+} // Author: XC

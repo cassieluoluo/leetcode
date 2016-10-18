@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         int i = 0;
@@ -8,4 +8,4 @@ public:
         }
         return i;
     }
-};
+}; // Author: XC

@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Contains Duplicate
- *	https://leetcode.com/problems/contains-duplicate/
- *	Runtime: 104 ms
- */
- 
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
@@ -16,4 +9,4 @@ public:
         }
         return false;
     }
-};
+}; // Author: XC
