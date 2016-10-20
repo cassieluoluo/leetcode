@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Valid Parentheses
- *	https://leetcode.com/problems/valid-parentheses/
- *	Runtime: 2 ms
- */
-
 class Solution {
 public:
     bool isValid(string s) {
@@ -22,4 +15,4 @@ public:
     	if (st.size() > 0) return false;
     	return true;
     }
-};
+}; // Author: XC

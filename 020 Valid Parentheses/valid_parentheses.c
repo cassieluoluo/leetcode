@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Valid Parentheses
- *	https://leetcode.com/problems/valid-parentheses/
- *	Runtime: 1 ms
- */
-
 bool isValid(char* s) {
     char *st = (char*)malloc(1024 * sizeof(char));
 	int index = 0;
@@ -31,4 +24,4 @@ bool isValid(char* s) {
 		s++;
 	}
 	return !index;
-}
+} /* Author: XC */
