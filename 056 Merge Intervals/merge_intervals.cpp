@@ -10,7 +10,7 @@
 bool compareInterval(Interval i1, Interval i2) {
     return i1.start < i2.start;
 }
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     vector<Interval> merge(vector<Interval>& intervals) {
         sort(intervals.begin(), intervals.end(), compareInterval);
@@ -29,4 +29,4 @@ public:
 		}
 		return result;
     }
-};
+}; // Author: XC

@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     bool isSymmetric(TreeNode* root) {
         if (root == nullptr) return true;
@@ -24,4 +24,4 @@ public:
         }
         return false;
     }
-};
+}; // Author: XC
