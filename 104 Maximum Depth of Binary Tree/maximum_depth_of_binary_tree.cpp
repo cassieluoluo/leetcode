@@ -1,9 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Maximum Depth of Binary Tree
- *	https://leetcode.com/problems/maximum-depth-of-binary-tree/
- *	Runtime: 8 ms
- */
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -19,4 +13,4 @@ public:
         if (!root) return 0;
         return max(maxDepth(root->left) + 1, maxDepth(root->right) + 1);
     }
-};
+}; // Author: XC
