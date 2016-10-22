@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     bool wordBreak(string s, unordered_set<string>& wordDict) {
         vector<int> dp(s.size() + 1, 0);
@@ -12,4 +12,4 @@ public:
         }
         return dp.back() == 1;
     }
-};
+}; // Author: XC

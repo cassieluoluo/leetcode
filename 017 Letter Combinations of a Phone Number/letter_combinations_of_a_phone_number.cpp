@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     const vector<string> letters{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
     vector<string> letterCombinations(string digits) {
@@ -21,4 +21,4 @@ public:
     }
 private:
     vector<string> result;
-};
+}; // Author: XC
