@@ -1,4 +1,4 @@
-void moveZeroes(int* nums, int numsSize) {	// Author: Xinyu Chen
+void moveZeroes(int* nums, int numsSize) {
     if (numsSize < 2) return;
     int slow = 0, fast = 1, temp;
     while (fast < numsSize) {
@@ -14,4 +14,4 @@ void moveZeroes(int* nums, int numsSize) {	// Author: Xinyu Chen
         }
         slow++;
     }
-}
+} /* Author: XC */
