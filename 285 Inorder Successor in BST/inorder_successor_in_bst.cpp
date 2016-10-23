@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {  // Author: Xinyu Chen
+class Solution {
 public:
     TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) {
         TreeNode* succ = nullptr;
@@ -20,4 +20,4 @@ public:
         }
         return succ;
     }
-};
+}; // Author: XC
