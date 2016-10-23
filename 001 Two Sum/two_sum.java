@@ -11,11 +11,9 @@ public class TwoSum{
             map.put(nums[i], i);
         }
         return rtn;
-    }
+    } // Author: XC
 
-    /* If all the numbers are non-negative, we can use array. */
-
-    /*
+    // If all the numbers are non-negative, we can use array.
     public int[] twoSum(int[] nums, int target){
         int have[] = new int[target];
         int rtn[] = new int[2];
@@ -29,5 +27,5 @@ public class TwoSum{
             have[nums[i]] = i;
         }
         return rtn;
-    }*/
-} // Author: Bonnie
+    } // Author: Bonnie
+} 
