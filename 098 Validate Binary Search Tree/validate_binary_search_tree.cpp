@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     bool isValidBST(TreeNode* root) {
         return dfs(root, numeric_limits<long>::min(), numeric_limits<long>::max());
@@ -18,4 +18,4 @@ public:
         if (node->val <= minVal || node->val >= maxVal) return false;
         return dfs(node->left, minVal, node->val) && dfs(node->right, node->val, maxVal);
     }
-};
+}; // Author: XC

@@ -1,3 +1,4 @@
+// DFS
 class Solution {
 public:
     vector<string> removeInvalidParentheses(string s) {
@@ -11,7 +12,7 @@ public:
 			}
 		}
 		if (rm_left == 0 && rm_right == 0) return vector<string>{s};
-		deque<char> row;
+		vector<char> row;
 		dfs(0, 0, rm_left, rm_right, row);
 		vector<string> res;
 		for (auto s : result) {
@@ -20,12 +21,10 @@ public:
 		return res;
 	}
 
-	void dfs(int pos, int par, int left, int right, deque<char>& row) {
+	void dfs(int pos, int par, int left, int right, vector<char>& row) {
 		if (pos == str.size() && left == 0 && right == 0 && par == 0) {
 			stringstream ss;
-			for (auto c : row) {
-				ss << c;
-			}
+			for (auto c : row) ss << c;
 			result.insert(ss.str());
 			return;
 		}
@@ -51,4 +50,44 @@ public:
 private:
 	string str;
 	unordered_set<string> result;
-};
+}; // Author: XC
+
+// BFS
+class Solution {
+public:
+    vector<string> removeInvalidParentheses(string s) {
+		vector<string> result;
+        unordered_set<string> checked;
+        checked.insert(s);
+        queue<string> q;
+        q.push(s);
+		bool found = false;
+        while (!q.empty()) {
+            string str = q.front();
+            q.pop();
+            if (validate(str)) {
+                result.push_back(str);
+                found = true;
+            }
+			if (found) continue;
+            for (int i = 0; i < str.size(); i++) {
+                if (str[i] != '(' && str[i] != ')') continue;
+                string test = str.substr(0, i) + str.substr(i + 1);
+                if (checked.find(test) == checked.end()) {
+                    q.push(test);
+                    checked.insert(test);
+                }
+            }
+        }
+        return result;
+    }
+    
+    bool validate(string s) {
+        int count = 0;
+        for (auto ch : s) {
+            if (ch == '(') count++;
+            if (ch == ')' && count-- == 0) return false;
+        }
+        return count == 0;
+    }
+}; // Author: XC

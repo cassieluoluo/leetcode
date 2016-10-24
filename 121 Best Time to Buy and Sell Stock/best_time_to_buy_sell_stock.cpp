@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Best Time to Buy and Sell Stock
- *	https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
- *	Runtime: 8 ms
- */
-
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -17,4 +10,4 @@ public:
         }
         return sell;
     }
-};
+}; // Author: XC

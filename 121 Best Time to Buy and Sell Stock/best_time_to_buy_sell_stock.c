@@ -6,4 +6,4 @@ int maxProfit(int* prices, int pricesSize) {
         if (prices[i] < buy) buy = prices[i];
     }
     return sell;
-} // Author: Xinyu Chen
+} /* Author: XC */

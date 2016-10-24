@@ -6,7 +6,6 @@
  *     struct TreeNode *right;
  * };
  */
-// Author: Xinyu Chen
 bool dfs(struct TreeNode *node, long curr_min, long curr_max) {
     if (node == NULL) return true;
     if (node->val <= curr_min || node->val >= curr_max) return false;
@@ -15,4 +14,4 @@ bool dfs(struct TreeNode *node, long curr_min, long curr_max) {
 
 bool isValidBST(struct TreeNode* root) {
     return dfs(root, (long)INT_MIN - 1, (long)INT_MAX + 1);
-}
+} /* Author: XC */
