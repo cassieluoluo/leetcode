@@ -1,4 +1,4 @@
-public class Solution {	// Author: Xinyu Chen
+public class Solution {
     public void SortColors(int[] nums)
     {
         int pos = 0, red = 0, blue = nums.Length - 1;
@@ -22,4 +22,4 @@ public class Solution {	// Author: Xinyu Chen
         a = b;
         b = c;
     }
-}
+} // Author: XC

@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     void sortColors(vector<int>& nums) {
         int red = 0, blue = nums.size() - 1;
@@ -14,4 +14,4 @@ public:
             }
         }
     }
-};
+}; // Author: XC
