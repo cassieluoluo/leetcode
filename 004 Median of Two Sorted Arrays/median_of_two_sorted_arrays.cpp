@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Median of Two Sorted Arrays
- *	https://leetcode.com/problems/reverse-integer/
- *	Runtime: 44 ms
- */
-
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -29,4 +22,4 @@ public:
         }
         return -1;
     }
-};
+}; // Author: XC
