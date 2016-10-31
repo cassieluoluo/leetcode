@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     vector<string> generatePossibleNextMoves(string s) {
         vector<string> result;
@@ -11,4 +11,4 @@ public:
         }
         return result;
     }
-};
+}; // Author: XC
