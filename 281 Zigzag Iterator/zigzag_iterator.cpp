@@ -1,4 +1,4 @@
-class ZigzagIterator {	// Author: Xinyu Chen
+class ZigzagIterator {
 public:
 	ZigzagIterator(std::vector<int>& v1, std::vector<int>& v2) {
 		auto i = v1.begin(), j = v2.begin();
@@ -25,9 +25,9 @@ public:
 		return iter != data.end();
 	}
 private:
-	std::vector<int> data;
-	std::vector<int>::iterator iter;
-};
+	vector<int> data;
+	vector<int>::iterator iter;
+}; // Author: Xinyu Chen
 
 /**
  * Your ZigzagIterator object will be instantiated and called as such:

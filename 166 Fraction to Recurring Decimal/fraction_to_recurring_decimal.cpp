@@ -1,10 +1,3 @@
-/*	
- *	LeetCode Submissions by Xinyu Chen
- *	Fraction to Recurring Decimal
- *	https://leetcode.com/problems/fraction-to-recurring-decimal/
- *	Runtime: 0 ms
- */
-
 class Solution {
 public:
     string fractionToDecimal(int numerator, int denominator) {
@@ -55,4 +48,4 @@ public:
     	}
     	return result.str();
     }
-};
+}; // Author: XC
