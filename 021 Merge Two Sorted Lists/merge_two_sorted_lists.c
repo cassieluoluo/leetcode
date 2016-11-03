@@ -21,4 +21,4 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     if (l1) cur->next = l1;
     else cur->next = l2;
     return res->next;
-} // Author: Xinyu Chen
+} // Author: XC

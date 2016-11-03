@@ -6,7 +6,7 @@
  *     public ListNode(int x) { val = x; }
  * }
  */
-public class Solution { // Author: Xinyu Chen
+public class Solution {
     public ListNode MergeTwoLists(ListNode l1, ListNode l2)
     {
         ListNode result = new ListNode(0);
@@ -29,4 +29,4 @@ public class Solution { // Author: Xinyu Chen
         else curr.next = l2;
         return result.next;
     }
-}
+} // Author: XC

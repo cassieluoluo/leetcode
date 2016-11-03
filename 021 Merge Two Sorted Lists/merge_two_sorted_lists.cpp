@@ -6,7 +6,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         ListNode* current = new ListNode(0);
@@ -25,4 +25,4 @@ public:
         else if (l2 != nullptr) current->next = l2;
         return prehead->next;
     }
-};
+}; // Author: XC
