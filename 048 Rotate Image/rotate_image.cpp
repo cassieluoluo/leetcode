@@ -1,4 +1,4 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
         const int n = matrix.size();
@@ -13,4 +13,4 @@ public:
             }
         }
     }
-};
+}; // Author: XC

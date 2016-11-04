@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     int maxPathSum(TreeNode* root) {
         max_val = numeric_limits<int>::min();
@@ -24,4 +24,4 @@ public:
     }
 private:
     int max_val;
-};
+}; // Author: XC

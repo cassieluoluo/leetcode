@@ -25,5 +25,4 @@ int helper(struct TreeNode *node, int *maxval) {
 
 int max(int a, int b) {
     return a > b ? a : b;
-}
-// Author: XC
+} /* Author: XC */

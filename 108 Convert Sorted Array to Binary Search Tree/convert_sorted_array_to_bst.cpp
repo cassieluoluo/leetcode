@@ -7,7 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
     TreeNode* sortedArrayToBST(vector<int>& nums) {
         if (nums.empty()) return nullptr;
@@ -22,4 +22,4 @@ public:
         node->right = bfs(nums, pos + 1, right);
         return node;
     }
-};
+}; // Author: XC

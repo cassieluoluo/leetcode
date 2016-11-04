@@ -21,4 +21,4 @@ public:
         }
         seq[lo] = n;
     }
-};
+}; // Author: XC
