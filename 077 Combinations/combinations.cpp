@@ -1,24 +1,23 @@
-class Solution {	// Author: Xinyu Chen
+class Solution {
 public:
-    vector<vector<int>> combine(int n, int k) {
-        vector<int> row;
-        dfs(n, k, 1, row);
+     vector<vector<int>> combine(int n, int k) {
+        vector<int> entry;
+        helper(n, k, 1, entry);
         return result;
     }
     
-    void dfs(int n, int k, int i, vector<int>& row) {
-        if (i > n) return;
-        for (int j = i; j <= n; j++) {
-            row.push_back(j);
-            if (row.size() == k) {
-                result.push_back(row);
-            }
-            else {
-                dfs(n, k, j + 1, row);
-            }
-            row.pop_back();
+    void helper(int n, int k, int curr, vector<int>& entry) {
+        if (entry.size() == k) {
+            result.push_back(entry);
+            return;
+        }
+        for (int i = curr; i <= n; i++) {
+            entry.push_back(i);
+            helper(n, k, i + 1, entry);
+            entry.pop_back();
         }
     }
+
 private:
     vector<vector<int>> result;
-};
+}; // Author: XC

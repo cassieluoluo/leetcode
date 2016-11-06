@@ -26,4 +26,4 @@ int** permute(int* nums, int numsSize, int* returnSize) {
 	int index = 0;
 	dfs(nums, numsSize, 0, result, &index);
 	return result;
-} // Author: Xinyu Chen
+} /* Author: Xinyu Chen */
